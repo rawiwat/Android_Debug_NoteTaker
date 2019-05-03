@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This goal of this project is to debug the Note Taker project from the first unit. As this is a project specifically intended to help you practice your debugging skills and using the resources available to you, refrain from asking for help unless absolutely necessary.
+This goal of this project is to debug a Note Taker project. As this is a project specifically intended to help you practice your debugging skills and using the resources available to you, refrain from asking for help unless absolutely necessary.
 
 ## Instructions
 
