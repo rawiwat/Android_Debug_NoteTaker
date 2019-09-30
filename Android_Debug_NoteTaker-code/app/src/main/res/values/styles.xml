@@ -1,0 +1,21 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="card_layout_margin">@dimen/card_layout_margin</item>
+        <item name="card_corner_radius">@dimen/card_corner_radius_small</item>
+        <item name="note_title_text_size">@dimen/note_title_text_size</item>
+        <item name="note_content_text_size">@dimen/note_content_text_size</item>
+    </style>
+
+    <style name="AppThemeRound" parent="AppTheme">
+        <item name="colorPrimary">@color/reddishColorPrimary</item>
+        <item name="colorPrimaryDark">@color/reddishColorPrimaryDark</item>
+        <item name="colorAccent">@color/reddishColorAccent</item>
+        <item name="card_corner_radius">@dimen/card_corner_radius_large</item>
+    </style>
+</resources>
