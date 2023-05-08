@@ -9,8 +9,8 @@ import android.widget.EditText
 class EditActivity : AppCompatActivity() {
 
 
-    internal var editTitle: EditText
-    internal var editContent: EditText
+    internal lateinit var editTitle: EditText
+    internal lateinit var editContent: EditText
     internal var note: Note? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {

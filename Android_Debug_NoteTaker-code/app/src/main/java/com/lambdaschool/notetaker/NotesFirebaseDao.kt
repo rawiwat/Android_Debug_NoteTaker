@@ -12,6 +12,7 @@ object NotesFirebaseDao {
     private val BASE_URL = "https://notesdemoproject.firebaseio.com/"
     private val NOTES = "notes/"
     private val URL_ENDING = ".json"
+    private val USER_ID = ""
 
     private val USER_INFO = BASE_URL + USER_ID + URL_ENDING
     private val USER_NOTES = BASE_URL + USER_ID + NOTES + URL_ENDING
