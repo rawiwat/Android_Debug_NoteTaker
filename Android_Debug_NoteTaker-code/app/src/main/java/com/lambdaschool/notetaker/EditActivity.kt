@@ -2,12 +2,11 @@ package com.lambdaschool.notetaker
 
 import android.app.Activity
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.EditText
 
 class EditActivity : AppCompatActivity() {
-
 
     internal lateinit var editTitle: EditText
     internal lateinit var editContent: EditText

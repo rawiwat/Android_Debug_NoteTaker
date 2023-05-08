@@ -1,10 +1,6 @@
 package com.lambdaschool.notetaker
 
-import java.io.BufferedReader
-import java.io.IOException
-import java.io.InputStream
-import java.io.InputStreamReader
-import java.io.OutputStream
+import java.io.*
 import java.net.HttpURLConnection
 import java.net.MalformedURLException
 import java.net.URL
@@ -16,7 +12,7 @@ object NetworkAdapter {
     val DELETE = "DELETE"
     val TIMEOUT = 3000
 
-    @JvmOverloads
+    //@JvmOverloads
     fun httpRequest(stringUrl: String, requestType: String, body: String = ""): String {
         var result = ""
         var stream: InputStream? = null
@@ -50,10 +46,10 @@ object NetworkAdapter {
 
         } catch (e: MalformedURLException) {
             e.printStackTrace()
-            result = e.message
+            result = e.message.toString()
         } catch (e: IOException) {
             e.printStackTrace()
-            result = e.message
+            result = e.message.toString()
         } finally {
             connection?.disconnect()
 

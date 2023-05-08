@@ -84,7 +84,8 @@ class Note : Serializable {
     }
 
     fun toCsvString(): String {
-        return this.title!!.replace(",".toRegex(), "") + "," + this.content!!.replace(",".toRegex(), "") + "," + this.id
+        //return this.title!!.replace(",".toRegex(), "") + "," + this.content!!.replace(",".toRegex(), "") + "," + this.id"
+        return "${this.title?.replace(",","")},${this.content?.replace(",","")},${this.id}"
     }
 
     fun toJsonString(): String {

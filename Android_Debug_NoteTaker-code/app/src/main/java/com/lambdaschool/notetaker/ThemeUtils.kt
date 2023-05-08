@@ -1,8 +1,6 @@
 package com.lambdaschool.notetaker
 
 import android.app.Activity
-import android.content.Intent
-import android.content.SharedPreferences
 import android.preference.PreferenceManager
 
 object ThemeUtils {
@@ -26,7 +24,7 @@ object ThemeUtils {
         activity.startActivity(intent)
     }
 
-    fun checkTheme(activity: Activity, activeTheme: Int): Boolean {
+    fun checkTheme(activity: Activity?, activeTheme: Int): Boolean {
         return if (getSelectedTheme(activity) == activeTheme) {
             true
         } else {

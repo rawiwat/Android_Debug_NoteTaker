@@ -1,6 +1,6 @@
 package com.lambdaschool.notetaker
 
-import android.arch.lifecycle.MutableLiveData
+import androidx.lifecycle.MutableLiveData
 import android.content.Context
 
 import org.json.JSONException
@@ -10,7 +10,7 @@ import java.util.ArrayList
 
 class NoteRepository {
     //    private ArrayList<Note> notes;
-    var liveDataList: MutableLiveData<ArrayList<Note>>
+    lateinit var liveDataList: MutableLiveData<ArrayList<Note>>
 
     private val notesFromCache: ArrayList<Note>
         get() = NotesDbDao.readAllNotes()
